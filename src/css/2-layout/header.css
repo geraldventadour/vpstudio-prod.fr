@@ -1,0 +1,39 @@
+header {
+  --color: black;
+  --max-inline-size: calc(var(--measure) * 2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+header > .cluster {
+  inline-size: 100%;
+}
+
+header > .cluster > nav {
+  margin-inline-start: auto;
+}
+
+header ul {
+  padding: 0;
+  list-style: none;
+}
+
+header a {
+  text-transform: uppercase;
+  /*   font-weight: var(--fw-bold); */
+  text-decoration: none;
+  padding: 0.5em;
+  display: inline-block;
+  color: var(--color);
+}
+
+.social-links{
+  --column-gap: 0;
+}
+
+.hero-video {
+  block-size: 100vh;
+}

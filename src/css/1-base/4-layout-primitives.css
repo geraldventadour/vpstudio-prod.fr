@@ -1,0 +1,41 @@
+[class^='stack'] {
+  display: flex;
+  flex-direction: column;
+  justify-content: var(--vertical-alignment, flex-start);
+}
+
+.stack > * + * {
+  margin-block-start: var(--margin-block-start,);
+}
+
+.stack-large > * + * {
+  margin-block-start: var(--s5);
+}
+
+.center {
+  box-sizing: content-box;
+  max-inline-size: var(--max-inline-size);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  color: var(--color);
+  background-color: var(--background-color);
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+  padding: var(--padding, var(--s1));
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: var(--flex-wrap);
+  column-gap: var(--column-gap, var(--space-2xs));
+  row-gap: var(--row-gap, var(--s0));
+  justify-content: var(--horizontal-alignment,space-between);
+  align-items: var(--vertical-alignment,center);
+  flex-wrap: var(--flex-wrap);
+}

@@ -1,0 +1,16 @@
+body {
+  font-family: var(--font-family);
+  font-size: var(--step-0);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+figcaption {
+  max-inline-size: var(--measure);
+}
