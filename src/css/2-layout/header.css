@@ -6,7 +6,6 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgb(0, 0, 0,.015);
 }
 
 header > .cluster {
