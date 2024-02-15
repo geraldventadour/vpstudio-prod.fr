@@ -17,25 +17,17 @@
   src: url('../assets/fonts/barlow-v12-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
        url('../assets/fonts/barlow-v12-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,32,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
-  /* Step -2: 12.5px → 12.8px */
-  --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vi, 0.8rem);
-  /* Step -1: 15px → 16px */
-  --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vi, 1rem);
-  /* Step 0: 18px → 20px */
-  --step-0: clamp(1.125rem, 1.0815rem + 0.2174vi, 1.25rem);
-  /* Step 1: 21.6px → 25px */
-  --step-1: clamp(1.35rem, 1.2761rem + 0.3696vi, 1.5625rem);
-  /* Step 2: 25.92px → 31.25px */
-  --step-2: clamp(1.62rem, 1.5041rem + 0.5793vi, 1.9531rem);
-  /* Step 3: 31.104px → 39.0625px */
-  --step-3: clamp(1.944rem, 1.771rem + 0.8651vi, 2.4414rem);
-  /* Step 4: 37.3248px → 48.8281px */
-  --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vi, 3.0518rem);
-  /* Step 5: 44.7898px → 61.0352px */
-  --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vi, 3.8147rem);
+  --step--2: clamp(0.7813rem, 0.6078rem + 0.8674vi, 1.28rem);
+  --step--1: clamp(0.9375rem, 0.7071rem + 1.1522vi, 1.6rem);
+  --step-0: clamp(1.125rem, 0.8207rem + 1.5217vi, 2rem);
+  --step-1: clamp(1.35rem, 0.95rem + 2vi, 2.5rem);
+  --step-2: clamp(1.62rem, 1.0965rem + 2.6174vi, 3.125rem);
+  --step-3: clamp(1.944rem, 1.2615rem + 3.4126vi, 3.9063rem);
+  --step-4: clamp(2.3328rem, 1.4458rem + 4.4348vi, 4.8828rem);
+  --step-5: clamp(2.7994rem, 1.6501rem + 5.7464vi, 6.1035rem);
 }
 
 /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
@@ -163,9 +155,9 @@ h6 {
   box-sizing: content-box;
   max-inline-size: var(--max-inline-size);
   margin-inline: auto;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 .box {
@@ -223,7 +215,6 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgb(0, 0, 0,.015);
 }
 
 header > .cluster {
