@@ -137,6 +137,7 @@ h6 {
   box-sizing: content-box;
   max-inline-size: var(--max-inline-size);
   margin-inline: auto;
+  padding-inline: var(--padding-inline);
   /* display: flex;
   flex-direction: column;
   align-items: center; */
@@ -191,12 +192,18 @@ figcaption {
 
 header {
   --color: white;
-  --max-inline-size: calc(var(--measure) * 2);
+  /*   --max-inline-size: calc(var(--measure) * 2); */
+  --max-inline-size: ;
+  --padding-inline: var(--space-xs);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+}
+
+header.sticking {
+  background-color: black;
 }
 
 header > .cluster {
@@ -251,3 +258,12 @@ header a {
 figure {
   flex: 1 1 720px;
 }
+
+section.text {
+  block-size: 50vh;
+  background-image: url("../../assets/images/MARKETING.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
