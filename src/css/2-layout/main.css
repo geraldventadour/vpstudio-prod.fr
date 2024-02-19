@@ -9,3 +9,12 @@
 figure {
   flex: 1 1 720px;
 }
+
+section.text {
+  block-size: 50vh;
+  background-image: url("../../assets/images/MARKETING.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
