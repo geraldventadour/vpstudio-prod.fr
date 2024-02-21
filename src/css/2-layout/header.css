@@ -28,12 +28,13 @@ header ul {
 }
 
 header a {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   /*   font-weight: var(--fw-bold); */
   text-decoration: none;
   padding: 0.5em;
   display: inline-block;
   color: var(--color);
+  font-weight: var(--fw-bold);
 }
 
 .social-links {
