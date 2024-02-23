@@ -1,8 +1,8 @@
 header {
   --color: white;
-  /*   --max-inline-size: calc(var(--measure) * 2); */
-  --max-inline-size: ;
-  --padding-inline: var(--space-xs);
+    --max-inline-size: calc(var(--measure)*1.30);
+/*   --max-inline-size: ; */
+  /* --padding-inline: var(--space-xs); */
   position: fixed;
   top: 0;
   left: 0;

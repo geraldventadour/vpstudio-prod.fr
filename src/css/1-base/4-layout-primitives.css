@@ -28,14 +28,14 @@
   border-width: var(--border-width);
   border-style: var(--border-style);
   border-color: var(--border-color);
-  padding: var(--padding, var(--s1));
+  padding: var(--padding, var(--space-s-m));
 }
 
 .cluster {
   display: flex;
   flex-wrap: var(--flex-wrap);
-  column-gap: var(--column-gap, var(--space-2xs));
-  row-gap: var(--row-gap, var(--s0));
+  column-gap: var(--column-gap, var(--space-m));
+  row-gap: var(--row-gap, var(--space-m));
   justify-content: var(--horizontal-alignment,space-between);
   align-items: var(--vertical-alignment,center);
   flex-wrap: var(--flex-wrap);
