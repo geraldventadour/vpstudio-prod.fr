@@ -31,10 +31,11 @@ header a {
   /* text-transform: uppercase; */
   /*   font-weight: var(--fw-bold); */
   text-decoration: none;
-  padding: 0.5em;
+  padding: 0.25em;
   display: inline-block;
   color: var(--color);
   font-weight: var(--fw-bold);
+  line-height: 0;
 }
 
 .social-links {

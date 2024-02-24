@@ -65,7 +65,8 @@
       {%- for network in socialNetworks %}
 
         <a href="{{ network.url }}" target="_blank" rel="noopener noreferrer">
-          <img src="{{ network.image }}" alt="{{ network.text }}"></a>
+          <ion-icon name="{{network.icon}}" aria-label="{{network.text}}"></ion-icon>
+          <!-- <img src="{{ network.image }}" alt="{{ network.text }}"> --></a>
 
       {%- endfor %}
     </div>

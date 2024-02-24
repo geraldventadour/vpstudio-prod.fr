@@ -5,11 +5,13 @@ module.exports = [
     url: 'https://www.facebook.com/vpstudiofwi/',
   }, */
   {
+    icon:'logo-linkedin',
     image: './assets/images/iconmonstr-linkedin-3.svg',
     text: 'Visiter notre page LinkedIn',
     url: 'https://fr.linkedin.com/in/phannuel-velasques-pv',
   },
   {
+    icon:'logo-instagram',
     image: './assets/images/iconmonstr-instagram-11.svg',
     text: 'Visiter notre page Instagram',
     url: 'https://www.instagram.com/vpstudio_prod/',

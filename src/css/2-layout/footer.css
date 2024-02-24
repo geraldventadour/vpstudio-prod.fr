@@ -1,0 +1,31 @@
+footer {
+  font-weight: var(--fw-bold);
+  color: white;
+  
+  
+  background-color: gray;
+}
+
+footer .stack {
+  align-items: center;
+  --vertical-alignment: center;
+  block-size: 50vh;
+}
+
+footer .contact {
+  text-decoration: none;
+  color: black;
+  padding: 0.25em .5em;
+  background-color: white;
+  border-radius: 0.25em;
+}
+
+footer .social-links {
+  --horizontal-alignment: center;
+  line-height: 0;
+  --column-gap: var(--space-s);
+}
+
+footer .social-links a {
+  color: currentColor;
+}
