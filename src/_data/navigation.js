@@ -1,3 +1,3 @@
 module.exports = [
-  { text: 'contact', url: '/contact' },
+  { text: 'contact', url: './contact' },
 ];
