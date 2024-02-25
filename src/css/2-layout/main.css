@@ -12,6 +12,8 @@ figure {
 
 article {
   --margin-block-start: var(--step-4);
+  --padding-inline: var(--space-3xs-2xs);
+  padding-block: var(--space-xl-2xl) ;
 }
 
 article h2 {
