@@ -5,18 +5,31 @@
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/barlow-v12-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../assets/fonts/barlow-v12-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../assets/fonts/barlow-v12-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url('../assets/fonts/barlow-v12-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+/* barlow-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/barlow-v12-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* barlow-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 700;
-  src: url('../assets/fonts/barlow-v12-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../assets/fonts/barlow-v12-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../assets/fonts/barlow-v12-latin-700.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url('../assets/fonts/barlow-v12-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* @link https://utopia.fyi/type/calculator?c=320,24,1.2,1240,32,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
@@ -60,7 +73,8 @@
 :root {
   --font-family: 'Barlow', sans-serif;
   --measure: 60ch;
-  --fw-bold:700
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
 }
 
 /*
@@ -155,8 +169,8 @@ h6 {
 .cluster {
   display: flex;
   flex-wrap: var(--flex-wrap);
-  column-gap: var(--column-gap, var(--space-m));
-  row-gap: var(--row-gap, var(--space-m));
+  column-gap: var(--column-gap, 1rem);
+  row-gap: var(--row-gap, 1rem);
   justify-content: var(--horizontal-alignment,space-between);
   align-items: var(--vertical-alignment,center);
   flex-wrap: var(--flex-wrap);
@@ -192,14 +206,18 @@ figcaption {
 
 header {
   --color: white;
-    --max-inline-size: calc(var(--measure)*1.30);
-/*   --max-inline-size: ; */
-  /* --padding-inline: var(--space-xs); */
+  --max-inline-size: calc(var(--measure) * 1.75);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  font-size: var(--step--2);
+  --padding:var(--space-xs-s)
+}
+
+header svg {
+  width: 12ch;
 }
 
 header.sticking {
@@ -226,7 +244,7 @@ header a {
   padding: 0.25em;
   display: inline-block;
   color: var(--color);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semi-bold);
   line-height: 0;
 }
 
@@ -253,7 +271,7 @@ header a {
   /* --max-inline-size : 95vw; */
   --flex-wrap:wrap;
   --horizontal-alignment:space-evenly;
-  --column-gap:0;
+  /* --column-gap:0; */
   --margin-block-start: var(--step-4);
 }
 
