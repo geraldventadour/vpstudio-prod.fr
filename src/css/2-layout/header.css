@@ -1,13 +1,17 @@
 header {
   --color: white;
-    --max-inline-size: calc(var(--measure)*1.30);
-/*   --max-inline-size: ; */
-  /* --padding-inline: var(--space-xs); */
+  --max-inline-size: calc(var(--measure) * 1.75);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  font-size: var(--step--2);
+  --padding:var(--space-xs-s)
+}
+
+header svg {
+  width: 12ch;
 }
 
 header.sticking {
@@ -34,7 +38,7 @@ header a {
   padding: 0.25em;
   display: inline-block;
   color: var(--color);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semi-bold);
   line-height: 0;
 }
 

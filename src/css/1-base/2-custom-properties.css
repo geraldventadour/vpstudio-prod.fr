@@ -41,5 +41,6 @@
 :root {
   --font-family: 'Barlow', sans-serif;
   --measure: 60ch;
-  --fw-bold:700
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
 }

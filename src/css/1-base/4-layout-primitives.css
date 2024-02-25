@@ -34,8 +34,8 @@
 .cluster {
   display: flex;
   flex-wrap: var(--flex-wrap);
-  column-gap: var(--column-gap, var(--space-m));
-  row-gap: var(--row-gap, var(--space-m));
+  column-gap: var(--column-gap, 1rem);
+  row-gap: var(--row-gap, 1rem);
   justify-content: var(--horizontal-alignment,space-between);
   align-items: var(--vertical-alignment,center);
   flex-wrap: var(--flex-wrap);
