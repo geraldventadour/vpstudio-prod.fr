@@ -1,9 +1,11 @@
 footer {
   font-weight: var(--fw-bold);
   color: white;
-  
-  
   background-color: #2B3443;
+}
+
+footer span {
+  font-size: var(--step-4);
 }
 
 footer .stack {

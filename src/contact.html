@@ -1,0 +1,38 @@
+---
+layout: layouts/base.html
+title: Contact
+---
+
+<main class="stack">
+  <div class="cluster stack">
+    <figure>
+      <img src="/assets/images/IMG_9589.JPG" alt="">
+    </figure>
+    <form class="stack" action="" method="post">
+      <div class="">
+        <label for="lastname">Nom :</label>
+        <input type="text" name="lastname" id="lastname" required>
+      </div>
+      <div class="">
+        <label for="firstname">Prénom :</label>
+        <input type="text" name="firstname" id="firstname" required>
+      </div>
+      <div class="">
+        <label for="email">E-mail :</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <fieldset>
+        <legend>Video ou photo ?</legend>
+        <label for="photo">Photo</label>
+        <input type="checkbox" name="photo" id="photo" required>
+        <label for="video">Video</label>
+        <input type="checkbox" name="video" id="video" required>
+      </fieldset>
+      <div class="">
+        <label for="subject">Sujet :</label>
+        <textarea name="subject" id="subject" required></textarea>
+      </div>
+      <button type="submit">Soumettre</button>
+    </form>
+  </div>
+</main>

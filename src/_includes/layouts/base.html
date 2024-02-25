@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}} | VpStudio Prod</title>
-    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    {%if page.url == '/'%} 
+    <link rel="stylesheet" href="/css/home.css">
+    {%endif%}
   </head>
   <body>
     {% include "../partials/header.html" %} {{ content }} {% include
@@ -17,6 +20,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./js/bundle.js"></script>
+    <script src="/js/bundle.js"></script>
   </body>
 </html>

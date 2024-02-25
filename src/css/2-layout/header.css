@@ -1,22 +1,19 @@
 header {
-  --color: white;
+  --color: black;
   --max-inline-size: calc(var(--measure) * 1.75);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
   font-size: var(--step--2);
-  --padding:var(--space-xs-s)
+  --padding: var(--space-3xs-2xs);
 }
 
 header svg {
   width: 12ch;
 }
 
-header.sticking {
-  background-color: black;
+header svg g{
+  fill: currentColor;
 }
+
+
 
 header > .cluster {
   inline-size: 100%;

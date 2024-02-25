@@ -6,6 +6,10 @@
   --margin-block-start: var(--step-4);
 }
 
+main {
+  /* min-height: 100vh; */
+}
+
 figure {
   flex: 0 1 640px;
 }
@@ -47,3 +51,16 @@ section.text span {
   text-align: center;
 }
 
+main.stack {
+  --vertical-alignment:center;
+}
+
+form {
+  --margin-block-start:1rem; 
+  width: 37ch;
+}
+
+input[type="text"],input[type="email"],textarea {
+  display: block;
+  width: 100%;
+}
