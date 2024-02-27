@@ -75,6 +75,7 @@
   --measure: 60ch;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+  --clr-gray:#494f56;
 }
 
 /*
@@ -294,6 +295,7 @@ article h2 {
 
 article  p {
   --measure:37ch;
+  color: var(--clr-gray);
 }
 
 article strong {
@@ -333,7 +335,7 @@ input[type="text"],input[type="email"],textarea {
 footer {
   font-weight: var(--fw-bold);
   color: white;
-  background-color: #2B3443;
+  background-color: var(--clr-gray);
 }
 
 footer span {
