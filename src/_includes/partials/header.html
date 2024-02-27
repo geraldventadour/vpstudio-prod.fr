@@ -1,6 +1,6 @@
 <header class="box">
   <div class="center cluster">
-    <a href="./"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    <a {% if link.url==page.url %} href="./" {% else %} href="../" {%endif%}><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
       width="160" height="32" viewBox="0 0 541.000000 56.000000"
       preserveAspectRatio="xMidYMid meet">
      
@@ -56,7 +56,7 @@
       <ul class="nav-links">
         {%- for link in navigation %}
         <li>
-          <a {% if link.url==page.url %} aria-current="page" {% endif %} href="{{ link.url }}">{{ link.text }}</a>
+          <a {% if link.url==page.url %} aria-current="page" href=".{{ link.url }}">{{ link.text }}{% else %} href="..{{ link.url }}">{{ link.text }}{% endif %}</a>
         </li>
         {%- endfor %}
       </ul>
