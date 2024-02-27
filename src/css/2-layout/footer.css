@@ -1,7 +1,7 @@
 footer {
   font-weight: var(--fw-bold);
   color: white;
-  background-color: #2B3443;
+  background-color: var(--clr-gray);
 }
 
 footer span {
