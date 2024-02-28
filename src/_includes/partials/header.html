@@ -56,7 +56,7 @@
       <ul class="nav-links">
         {%- for link in navigation %}
         <li>
-          <a {% if link.url==page.url %} aria-current="page" href=".{{ link.url }}">{{ link.text }}{% else %} href="..{{ link.url }}">{{ link.text }}{% endif %}</a>
+          <a {% if link.url==page.url %} aria-current="page" {% endif %} {% if page.url == '/' %} href=".{{ link.url }}">{{ link.text }}{% else %} href="..{{ link.url }}">{{ link.text }}{% endif %}</a>
         </li>
         {%- endfor %}
       </ul>
