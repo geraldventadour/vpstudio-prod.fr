@@ -266,8 +266,8 @@ header a {
 
 :root {
   /* --max-inline-size : 95vw; */
-  --flex-wrap:wrap;
-  --horizontal-alignment:space-evenly;
+  --flex-wrap: wrap;
+  --horizontal-alignment: space-evenly;
   /* --column-gap:0; */
   --margin-block-start: var(--step-4);
 }
@@ -283,17 +283,17 @@ figure {
 article {
   --margin-block-start: var(--step-4);
   --padding-inline: var(--space-2xs-xs);
-  padding-block: var(--space-xl-2xl) ;
+  padding-block: var(--space-xl-2xl);
 }
 
 article h2 {
   font-size: var(--step-4);
-  --measure:13ch;
+  --measure: 13ch;
   line-height: 1;
 }
 
-article  p {
-  --measure:37ch;
+article p {
+  --measure: 37ch;
   color: #252525;
 }
 
@@ -304,35 +304,18 @@ article strong {
 
 section.text {
   block-size: 65vh;
-  background-image: url("../assets/images/DSC08395.png");
+  background-image: url('../assets/images/DSC08395.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  --vertical-alignment:center
+  --vertical-alignment: center;
 }
 
 section.text span {
-  color : white;
+  color: white;
   font-weight: var(--fw-bold);
   font-size: var(--step-4);
   text-align: center;
-}
-
-main.stack {
-  --vertical-alignment:center;
-  padding-block: var(--space-s-l);
-}
-
-form {
-  --margin-block-start:2.5rem; 
-  /* width: 37ch; */
-  --padding: var(--space-l-xl);
-  
-}
-
-input[type="text"],input[type="email"],textarea {
-  display: block;
-  width: 100%;
 }
 footer {
   font-weight: var(--fw-bold);

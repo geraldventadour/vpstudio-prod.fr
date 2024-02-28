@@ -6,7 +6,9 @@
     <title>Contact | VpStudio Prod</title>
     
     
+    
     <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     
   </head>
   <body>
@@ -88,14 +90,14 @@
     <figure>
       <img src="../assets/images/IMG_9589.JPG" alt="">
     </figure>
-    <form class="stack " action="" method="post">
+    <form class="stack box" action="" method="post">
       <h2>Parlons de votre projet</h2>
       <div class="cluster">
-        <div class="">
+        <div class="name">
           <label for="lastname">Nom :</label>
           <input type="text" name="lastname" id="lastname" required>
         </div>
-        <div class="">
+        <div class="name">
           <label for="firstname">Prénom :</label>
           <input type="text" name="firstname" id="firstname" required>
         </div>
@@ -106,10 +108,16 @@
       </div>
       <fieldset>
         <legend>Votre projet concerne ?</legend>
-        <label for="photo">Photo</label>
-        <input type="checkbox" name="photo" id="photo" required>
-        <label for="video">Video</label>
-        <input type="checkbox" name="video" id="video" required>
+        <div class="project cluster">
+          <div class="cluster">
+            <label for="photo">Photo</label>
+            <input type="checkbox" name="photo" id="photo" required>
+          </div>
+          <div class="cluster">
+            <label for="video">Video</label>
+            <input type="checkbox" name="video" id="video" required>
+          </div>
+        </div>
       </fieldset>
       <div class="">
         <label for="subject">Sujet :</label>
@@ -156,6 +164,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="/js/bundle.js"></script>
+    <script src="./js/bundle.js"></script>
   </body>
 </html>
