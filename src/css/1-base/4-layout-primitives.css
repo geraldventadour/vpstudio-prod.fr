@@ -38,5 +38,4 @@
   row-gap: var(--row-gap, 1rem);
   justify-content: var(--horizontal-alignment,space-between);
   align-items: var(--vertical-alignment,center);
-  flex-wrap: var(--flex-wrap);
 }

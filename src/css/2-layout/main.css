@@ -16,7 +16,7 @@ figure {
 
 article {
   --margin-block-start: var(--step-4);
-  --padding-inline: var(--space-3xs-2xs);
+  --padding-inline: var(--space-2xs-xs);
   padding-block: var(--space-xl-2xl) ;
 }
 
@@ -28,7 +28,7 @@ article h2 {
 
 article  p {
   --measure:37ch;
-  color: var(--clr-gray);
+  color: #252525;
 }
 
 article strong {
@@ -54,11 +54,14 @@ section.text span {
 
 main.stack {
   --vertical-alignment:center;
+  padding-block: var(--space-s-l);
 }
 
 form {
-  --margin-block-start:1rem; 
-  width: 37ch;
+  --margin-block-start:2.5rem; 
+  /* width: 37ch; */
+  --padding: var(--space-l-xl);
+  
 }
 
 input[type="text"],input[type="email"],textarea {

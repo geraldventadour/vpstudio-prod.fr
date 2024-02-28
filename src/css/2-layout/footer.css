@@ -2,10 +2,12 @@ footer {
   font-weight: var(--fw-bold);
   color: white;
   background-color: var(--clr-gray);
+  --padding-inline: var(--space-xs-s);
 }
 
 footer span {
-  font-size: var(--step-4);
+  font-size: var(--step-2);
+  text-align: center;
 }
 
 footer .stack {
@@ -17,9 +19,11 @@ footer .stack {
 footer .contact {
   text-decoration: none;
   color: black;
-  padding: 0.25em .5em;
+  padding: .75rem 1.5rem;
   background-color: white;
   border-radius: 0.25em;
+  /* font-size: var(--step--2); */
+  font-size: 16px;
 }
 
 footer .social-links {

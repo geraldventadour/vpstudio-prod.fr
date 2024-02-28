@@ -1,7 +1,7 @@
 <footer>
   <div class="stack center">
     <span>Partageons nos idées.</span>
-    <a class="contact" href="./contact">Contactez-nous</a>
+    <a class="contact" {% if page.url== '/' %} href="./contact" {% else %} href="../contact" {%endif%}>Contactez-nous</a>
     <div class="cluster social-links">
       {%- for network in socialNetworks %}
 
