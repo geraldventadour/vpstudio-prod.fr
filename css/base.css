@@ -174,7 +174,6 @@ h6 {
   row-gap: var(--row-gap, 1rem);
   justify-content: var(--horizontal-alignment,space-between);
   align-items: var(--vertical-alignment,center);
-  flex-wrap: var(--flex-wrap);
 }
 
 .sr-only {
@@ -283,7 +282,7 @@ figure {
 
 article {
   --margin-block-start: var(--step-4);
-  --padding-inline: var(--space-3xs-2xs);
+  --padding-inline: var(--space-2xs-xs);
   padding-block: var(--space-xl-2xl) ;
 }
 
@@ -295,7 +294,7 @@ article h2 {
 
 article  p {
   --measure:37ch;
-  color: var(--clr-gray);
+  color: #252525;
 }
 
 article strong {
@@ -321,11 +320,14 @@ section.text span {
 
 main.stack {
   --vertical-alignment:center;
+  padding-block: var(--space-s-l);
 }
 
 form {
-  --margin-block-start:1rem; 
-  width: 37ch;
+  --margin-block-start:2.5rem; 
+  /* width: 37ch; */
+  --padding: var(--space-l-xl);
+  
 }
 
 input[type="text"],input[type="email"],textarea {
@@ -336,10 +338,12 @@ footer {
   font-weight: var(--fw-bold);
   color: white;
   background-color: var(--clr-gray);
+  --padding-inline: var(--space-xs-s);
 }
 
 footer span {
-  font-size: var(--step-4);
+  font-size: var(--step-2);
+  text-align: center;
 }
 
 footer .stack {
@@ -351,9 +355,11 @@ footer .stack {
 footer .contact {
   text-decoration: none;
   color: black;
-  padding: 0.25em .5em;
+  padding: .75rem 1.5rem;
   background-color: white;
   border-radius: 0.25em;
+  /* font-size: var(--step--2); */
+  font-size: 16px;
 }
 
 footer .social-links {
