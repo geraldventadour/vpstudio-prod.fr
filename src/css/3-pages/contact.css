@@ -1,0 +1,36 @@
+
+
+main.stack {
+  --vertical-alignment: center;
+  padding-block: var(--space-s-l);
+}
+
+form {
+  --margin-block-start: 2.5rem;
+  /* width: 37ch; */
+  --padding: var(--space-3xs-2xs);
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+.name {
+  flex:1;
+}
+
+.project {
+  --horizontal-alignment: space-between;
+}
+
+input:focus {
+  border: .125rem solid var(--clr-gray);
+}
+
+input[type='checkbox'] {
+  width: 1em;
+  height: 1em;
+}
