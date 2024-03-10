@@ -10,3 +10,7 @@ header {
 header.sticking {
   background-color: black;
 }
+
+header.hidden {
+  display: none;
+}

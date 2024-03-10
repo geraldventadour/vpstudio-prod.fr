@@ -45,16 +45,41 @@ section.text {
   --vertical-alignment: center;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
 section.text span {
   color: white;
   font-weight: var(--fw-bold);
   font-size: var(--step-4);
   text-align: center;
+  visibility: hidden;
 }
 
-.testimonial{
-  --column-gap:4rem;
-  --row-gap:4rem;
+section.text.fadeInUp span {
+  visibility: visible;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  
+  
+}
+
+.testimonial {
+  --column-gap: 4rem;
+  --row-gap: 4rem;
   --padding-inline: var(--space-2xs-xs);
 }
 
@@ -63,7 +88,7 @@ section.text span {
   list-style: none;
 }
 
-.testimonial h2{
+.testimonial h2 {
   text-align: center;
 }
 
