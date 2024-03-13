@@ -8,16 +8,16 @@ title: Contact
     <figure>
       <img src="../assets/images/IMG_9589.JPG" alt="">
     </figure>
-    <form class="stack box" action="" method="post">
+    <form class="stack box" action="https://formsubmit.co/phannuel.v@vpstudio-prod.fr" method="post">
       <h2>Parlons de votre projet</h2>
       <div class="cluster">
         <div class="name">
-          <label for="lastname">Nom :</label>
-          <input type="text" name="lastname" id="lastname" required>
+          <label for="nom">Nom :</label>
+          <input type="text" name="nom" id="nom" required>
         </div>
         <div class="name">
-          <label for="firstname">Prénom :</label>
-          <input type="text" name="firstname" id="firstname" required>
+          <label for="prénom">Prénom :</label>
+          <input type="text" name="prénom" id="prénom" required>
         </div>
       </div>
       <div class="">
@@ -29,17 +29,21 @@ title: Contact
         <div class="project cluster">
           <div class="cluster">
             <label for="photo">Photo</label>
-            <input type="checkbox" name="photo" id="photo" required>
+            <input type="radio" name="choix" id="photo" value="photo" required >
           </div>
           <div class="cluster">
-            <label for="video">Video</label>
-            <input type="checkbox" name="video" id="video" required>
+            <label for="video">Vidéo</label>
+            <input type="radio" name="choix" id="video" value="video" >
+          </div>
+          <div class="cluster">
+            <label for="photo-video">Photo et vidéo</label>
+            <input type="radio" name="choix" id="photo-video" value="photo & video" >
           </div>
         </div>
       </fieldset>
       <div class="">
-        <label for="subject">Sujet :</label>
-        <textarea name="subject" id="subject" required></textarea>
+        <label for="sujet">Sujet :</label>
+        <textarea name="sujet" id="sujet" required></textarea>
       </div>
       <button type="submit">Envoyer</button>
     </form>
