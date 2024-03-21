@@ -9,7 +9,7 @@ main.stack {
 form {
   --margin-block-start: 2.5rem;
   /* width: 37ch; */
-  --padding: var(--space-3xs-2xs);
+  --padding: var(--space-2xs-xs);
 }
 
 input[type='text'],

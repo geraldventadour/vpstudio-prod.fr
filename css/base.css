@@ -377,7 +377,7 @@ footer span {
 footer .stack {
   align-items: center;
   --vertical-alignment: center;
-  block-size: 50vh;
+  min-block-size: 50vh;
 }
 
 footer .contact {
