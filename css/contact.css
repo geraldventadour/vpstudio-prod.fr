@@ -19,6 +19,12 @@ textarea {
   width: 100%;
 }
 
+button {
+  background-color: var(--clr-gray);
+  color: white;
+  border-color: transparent;
+}
+
 .name {
   flex:1;
 }
