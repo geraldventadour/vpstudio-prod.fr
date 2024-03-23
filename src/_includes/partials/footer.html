@@ -2,7 +2,7 @@
   <div class="stack center">
     <span>Partageons nos idées.</span>
     <a class="contact" {% if page.url== '/' %} href="./contact" {% else %} href="../contact" {%endif%}>Contactez-nous</a>
-    <div class="cluster social-links">
+    <div class="cluster social-links box">
       {%- for network in socialNetworks %}
 
       <a href="{{ network.url }}" target="_blank" rel="noopener noreferrer">
